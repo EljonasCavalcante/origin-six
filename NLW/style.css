@@ -1,4 +1,4 @@
-/*====  RESET ============================ */
+/*==================================================  RESET == */
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ img {
   height: auto;
 }
 
-/*====  VARIABLES ============================ */
+/*===================================================  VARIABLES == */
 :root {
   --header-height: 4.5rem;
 
@@ -34,7 +34,7 @@ img {
   --body-color: hsl(0 0% 98%);
 }
 
-/*===  BASE ============================ */
+/*===============================================================  BASE == */
 html {
   scroll-behavior: smooth;
 }
@@ -86,7 +86,7 @@ body {
   );
 }
 
-/*====  LAYOUT ============================ */
+/*===================================================  LAYOUT == */
 .container {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -134,7 +134,7 @@ main {
   margin-top: calc(var(--header-height) + 2rem);
 }
 
-/*====  LOGO ============================ */
+/*=========================================================  LOGO == */
 .logo {
   font: 700 1.31rem 'Poppins', sans-serif;
   color: var(--title-color);
@@ -144,7 +144,7 @@ main {
   color: var(--base-color);
 }
 
-/*====  NAVIGATION ============================ */
+/*================================================  NAVIGATION == */
 nav {
   height: var(--header-height);
   display: flex;
@@ -194,7 +194,7 @@ nav .menu ul {
   display: none;
 }
 
-/* Mostrar menu */
+/*======================================== Mostrar menu ==*/
 nav.show .menu {
   opacity: 1;
   visibility: visible;
@@ -244,7 +244,7 @@ nav.show div.icon-close {
   top: 1.5rem;
 }
 
-/*====  HOME ============================ */
+/*==============================================  HOME == */
 #home {
   overflow: hidden;
 }
@@ -292,7 +292,7 @@ nav.show div.icon-close {
   margin-bottom: 2rem;
 }
 
-/*====  ABOUT ============================ */
+/*===============================================  ABOUT == */
 #about {
   background: white;
 }
@@ -330,7 +330,7 @@ nav.show div.icon-close {
   margin-right: 1.5rem;
 }
 
-/*====  SERVICES ============================ */
+/*===================================================== SERVICES == */
 .cards.grid {
   gap: 1.5rem;
 }
@@ -355,7 +355,7 @@ nav.show div.icon-close {
   margin-bottom: 0.75rem;
 }
 
-/*====  SERVICES ============================ */
+/*======================================================== SERVICES == */
 #testimonils {
   background: white;
 }
@@ -408,7 +408,7 @@ nav.show div.icon-close {
   margin-right: 0.5rem;
 }
 
-/*=========== swiper========== */
+/*=========================================================== swiper == */
 .swiper-slide {
   height: auto;
   padding: 4rem 1rem;
@@ -422,7 +422,7 @@ nav.show div.icon-close {
 .swiper-pagination-bullet-active {
   background: var(--base-color);
 }
-/*====  CONTACT ============================ */
+/*======================================================== CONTACT == */
 #contact .grid {
   gap: 4rem;
 }
