@@ -8,6 +8,9 @@
 
     <!-- Icones -->
     <link rel="stylesheet" href="assets/fonts/style.css" />
+    
+    <!--Swuiprjs.com-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> 
 
     <!-- STYLES -->
     <link rel="stylesheet" href="style.css" />
@@ -18,6 +21,8 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    
+
   </head>
   <body>
     <header id="header">
@@ -147,50 +152,56 @@
 
       <!-- TESTIMONTALS -->
       <section class="section" id="testimonials">
-        <div class="container grid">
+        <div class="container">
           <header>
             <h2 class="title" >Depoimentos quem já passou por aqui</h2>
           </header>
-          <div class="testimonials">
-            <div class="testimonial">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quae, iste expedita suscipit quos quo, eaque odit dolores ullam accusantium
-                </p>
-                <cite>
-                  <img src="/Assets/photo/01.jpg" alt=" foto de Bianca Barbosa Cavalcante">
-                  Bianca Barbosa Cavalcante
-                </cite>
-              </blockquote>              
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quae, iste expedita suscipit quos quo, eaque odit dolores ullam accusantium
+                  </p>
+                  <cite>
+                    <img src="/Assets/photo/01.jpg" alt=" foto de Bianca Barbosa Cavalcante">
+                    Bianca Barbosa Cavalcante
+                  </cite>
+                </blockquote>              
+              </div>
+  
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quae, iste expedita suscipit quos quo, eaque odit dolores ullam accusantium
+                  </p>
+                  <cite>
+                    <img src="/Assets/photo/02.jpg" alt="foto de Fernanda clark">
+                    Fernanda clark
+                  </cite>
+                </blockquote>              
+              </div>
+  
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quae, iste expedita suscipit quos quo, eaque odit dolores ullam accusantium
+                  </p>
+                  <cite>
+                    <img src="/Assets/photo/03.jpg" alt="foto de Clark Kenty">
+                    Clark Kenty
+                  </cite>
+                </blockquote>              
+              </div>
+
             </div>
 
-            <div class="testimonial">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quae, iste expedita suscipit quos quo, eaque odit dolores ullam accusantium
-                </p>
-                <cite>
-                  <img src="/Assets/photo/02.jpg" alt="foto de Fernanda clark">
-                  Fernanda clark
-                </cite>
-              </blockquote>              
-            </div>
-
-            <div class="testimonial">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quae, iste expedita suscipit quos quo, eaque odit dolores ullam accusantium
-                </p>
-                <cite>
-                  <img src="/Assets/photo/03.jpg" alt="foto de Clark Kenty">
-                  Clark Kenty
-                </cite>
-              </blockquote>              
-            </div>
-
+            <!-- If we need pagination -->
+           <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
@@ -198,7 +209,11 @@
 
       <!-- CONTACT -->
     </main>
+     
+    <!--Swuiperjs.com-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <!--mani.js-->
     <script src="main.js"></script>
   </body>
 </html>

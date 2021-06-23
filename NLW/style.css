@@ -360,6 +360,17 @@ nav.show div.icon-close {
   background: white;
 }
 
+#testimonils .container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#testimonils header {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 #testimonials blockquote {
   padding: 2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
@@ -395,4 +406,19 @@ nav.show div.icon-close {
   object-fit: cover; /*serve para ajustar img perfeita*/
   clip-path: circle();
   margin-right: 0.5rem;
+}
+
+/*=========== swiper========== */
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--base-color);
 }
