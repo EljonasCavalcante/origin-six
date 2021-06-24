@@ -522,6 +522,7 @@ footer .social a:hover {
 @media (min-width: 992px) {
   :root {
     --title-font-size: 2.2rem;
+    --subtitle-font-size: 1.125rem;
   }
 }
 /* medium devices: 767 > */
