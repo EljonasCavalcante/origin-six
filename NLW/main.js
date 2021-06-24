@@ -1,32 +1,27 @@
-/*  abre e fecha o menu quando clicar no icone: hamburguer e x */
-
+/* ================ abre e fecha o menu quando clicar no icone: hamburguer e x */
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 
 for (const element of toggle) {
-  element.addEventListener('click', function (event) {
-    event.preventDefault()
+  element.addEventListener('click', function () {
     nav.classList.toggle('show')
   })
 }
 
-/* quando clicar em um item do menu, esconder o menu */
-
+/*============== quando clicar em um item do menu, esconder o menu =============== */
 const links = document.querySelectorAll('nav ul li a')
 
 for (const link of links) {
   link.addEventListener('click', function () {
     nav.classList.remove('show')
-    scroolSmooth(link)
   })
 }
 
-/* mudar o header da página quando der scroll */
+/*================ mudar o header da página quando der scroll ==============*/
+function changeHeaderWhenScroll() {
+  const header = document.querySelector('#header')
+  const navHeight = header.offsetHeight
 
-const header = document.querySelector('#header')
-const navHeight = header.offsetHeight
-
-window.addEventListener('scroll', function () {
   if (window.scrollY >= navHeight) {
     // scroll é maior que a altura do header
     header.classList.add('scroll')
@@ -34,10 +29,9 @@ window.addEventListener('scroll', function () {
     // menor que a altura do header
     header.classList.remove('scroll')
   }
-})
+}
 
-/* Testimonials carousel slider swiper */
-
+/* ==========Testimonials carousel slider swiper =================*/
 const swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
   pagination: {
@@ -47,8 +41,7 @@ const swiper = new Swiper('.swiper-container', {
   keyboard: true
 })
 
-/* ScrollReveal: Mostrar elementos quando der scroll na página */
-
+/* ==========ScrollReveal: Mostrar elementos quando der scroll na página ========*/
 const scrollReveal = ScrollReveal({
   origin: 'top',
   distance: '30px',
@@ -61,18 +54,25 @@ scrollReveal.reveal(
   #about .image, #about .text,
   #services header, #services .card,
   #testimonials header, #testimonials .testimonials
-  #contact .text, #contact .links
+  #contact .text, #contact .links,
+  footer .brand, footer .social
   `,
   { interval: 100 }
 )
-/*aula ao vivo */
 
-function scroolSmooth(link) {
-  console.log(link)
-  const sectionId = link.getAtribute('href')
-  document
-    .querySelector(sectionId)
-    .scrollIntoView({
-      behavior: 'smooth'
-    })
+/* =============Botão voltar para o topo=============== */
+function backToTop() {
+  const backToTopButton = document.querySelector('.back-to-top')
+
+  if (window.scrollY >= 560) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
 }
+
+/* =====================When Scroll=========== */
+window.addEventListener('scroll', function () {
+  changeHeaderWhenScroll()
+  backToTop()
+})
