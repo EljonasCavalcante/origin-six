@@ -525,7 +525,9 @@ footer .social a:hover {
 
 /*========= MEDIA QUERIES  RESPONSIVIDADE===================*/
 /* extra large devices: +1200 > */
+/*  */
 @media (min-width: 1200px) {
+  /* =====resusable classes==== */
   .container {
     max-width: 1120px;
     margin-left: auto;
@@ -537,6 +539,19 @@ footer .social a:hover {
     padding: 10rem 0;
   }
 
+  .section header,
+  #testimonials header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button {
+    height: 3.125rem;
+  }
+   
+  /*======== navagation======= */
   nav .menu {
     opacity: 1;
     visibility: visible;
@@ -554,11 +569,14 @@ footer .social a:hover {
   nav .icno-menu {
     display: none;
   }
+  /*====== Layto ================*/
+  main {
+    margin-top: var(--header-height);
+  }
 
   /*======home tela  pc expansão=====*/
   #home .container {
-    grid-auto-flow: column;
-    
+    grid-auto-flow: column;    
     justify-content: space-between;
   }
 
@@ -569,12 +587,20 @@ footer .social a:hover {
 
   #home .text {
     order: 0;
+    max-width: 24rem;
+    text-align: left;
   }
 
-
-  main {
-    margin-top: var(--header-height);
-  }
+/*======ABOUT=========*/
+#about .container {
+  margin: 0 auto;
+  grid-auto-flow: column;
+}
+/*======== testimonials======= */
+#testimonials .container {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 }
 
