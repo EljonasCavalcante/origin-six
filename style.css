@@ -597,7 +597,7 @@ footer .social a:hover {
   grid-auto-flow: column;
 }
 
-/*======ABOUT=========*/
+/*======service=========*/
 .cards {
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -610,6 +610,16 @@ footer .social a:hover {
 #testimonials .container {
   margin-left: auto;
   margin-right: auto;
+}
+
+/*======service=========*/
+#contact .container {
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+#contact .text {
+  max-width: 25rem;
 }
 
 }
