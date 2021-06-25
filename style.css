@@ -596,6 +596,16 @@ footer .social a:hover {
   margin: 0 auto;
   grid-auto-flow: column;
 }
+
+/*======ABOUT=========*/
+.cards {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 /*======== testimonials======= */
 #testimonials .container {
   margin-left: auto;
