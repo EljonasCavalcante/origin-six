@@ -18,10 +18,10 @@ for (const link of links) {
 }
 
 /*================ mudar o header da página quando der scroll ==============*/
-function changeHeaderWhenScroll() {
   const header = document.querySelector('#header')
   const navHeight = header.offsetHeight
 
+  function changeHeaderWhenScroll() {
   if (window.scrollY >= navHeight) {
     // scroll é maior que a altura do header
     header.classList.add('scroll')
@@ -67,8 +67,9 @@ scrollReveal.reveal(
 )
 
 /* =============Botão voltar para o topo=============== */
-function backToTop() {
+
   const backToTopButton = document.querySelector('.back-to-top')
+  function backToTop() {
 
   if (window.scrollY >= 560) {
     backToTopButton.classList.add('show')
@@ -76,9 +77,38 @@ function backToTop() {
     backToTopButton.classList.remove('show')
   }
 }
+/* menu aativo conforme a seção visivel na  páogina */
+const sections =document.querySelector('main section[id]')
+function activateMenuAtCurrentSection() {
+
+  const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4
+
+  for( const section of sections) {
+    const sectionTop = section.offsetTop
+    const sectionHeigth = section.offsetHeight
+    const sectionId = section.getAttribute('id')
+
+    const checkpointStart = checkpoint>= sectionTop
+    const checkpointEnd = checkpoint <= sectionTop + sectionHeigth
+    
+    if(checkpointStart && checkpointEnd) {
+      document
+       .querySelector('nav ul li a[href*=' + section + ']')
+       .classList.add('active')
+    } else{
+      document
+        .querySelector('nav ul li a[href*=' + section + ']')
+        .classList.remove('active')
+
+    }
+  }
+
+}
 
 /* =====================When Scroll=========== */
 window.addEventListener('scroll', function () {
   changeHeaderWhenScroll()
   backToTop()
+  activateMenuAtCurrentSection()
 })
+ 
