@@ -549,6 +549,21 @@ footer .social a:hover {
     display: none;
   }
 
+  /*======home tela  pc expansão=====*/
+  #home .container {
+    grid-auto-flow: column;
+    width: fit-content;
+  }
+
+  #home .image {
+    order: 1;
+    
+  }
+
+  #home .text {
+    order: 0;
+  }
+
 
   main {
     margin-top: var(--header-height);
