@@ -25,7 +25,7 @@ img {
   /* colors */
   --hue: 159;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 36% 57%);
+  --base-color: hsl(var(--hue) 70% 60%);
   --base-color-second: hsl(var(--hue) 65% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 41% 10%);
@@ -54,7 +54,7 @@ body {
 }
 
 .title {
-  font: 700 var(--title-font-size) var(--title-font);
+  font: 700 var(--title-font-size) var(--title2-font);
   color: var(--title-color);
   -webkit-font-smoothing: auto;
 }
