@@ -145,7 +145,7 @@ body {
 
 /*====  LOGO ================================ */
 .logo {
-  font: 400 5rem var(--title2-font);  /* de 700 para 400   e title para title2 Alteração*/
+  font: 700 5rem var(--title2-font);  /* de 700 para 400   e title para title2 Alteração*/
   color: var(--title-color);
 
 }
