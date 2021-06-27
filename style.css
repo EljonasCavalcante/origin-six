@@ -38,6 +38,7 @@ img {
   --subtitle-font-size: 1.125rem;
   --title-font: 'Poppins', sans-serif;
   --body-font: 'DM Sans', sans-serif;
+  --title2-font:'Bangers', cursiva; /* add Alteração*/
 }
 
 /*===  BASE ======================================== */
@@ -144,8 +145,9 @@ body {
 
 /*====  LOGO ================================ */
 .logo {
-  font: 700 1.31rem var(--title-font);
+  font: 400 5rem var(--title2-font);  /* de 700 para 400   e title para title2 Alteração*/
   color: var(--title-color);
+
 }
 
 .logo span {
